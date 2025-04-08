@@ -6,7 +6,7 @@ import { AntdRegistry } from '@ant-design/nextjs-registry';
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-poppins',
 })
 
@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${urbanist.variable}  antialiased`}
       >
         <AntdRegistry>{children}</AntdRegistry>
-         </body>
+      </body>
     </html>
   );
 }

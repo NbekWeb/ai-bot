@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import WebApp from '@twa-dev/sdk'
+import Arrow from "@/components/icons/arrow";
 
 
 export default function Start() {
@@ -31,11 +31,10 @@ export default function Start() {
             >
                 {filteredData.map((item, i) => (
                     <SwiperSlide key={i}>
-                        <div className="px-2.5 pb-8">
+                        <div className="px-2.5 pb-8 ">
                             <Image
                                 className="w-full  "
-                                src="/robo1.png"
-                                alt="Robot"
+                                src={`/robo${i + 1}.png`} alt="Robot"
                                 width={180}
                                 height={38}
                                 priority
@@ -44,6 +43,18 @@ export default function Start() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <div className="mt-3.5">
+                <h2 className="font-semibold  text-3xl text-center ">
+                    Unlock the Power
+                    Of  Future AI
+                </h2>
+                <p className="text-white-700 font-light text-sm mt-1 mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+            </div>
+            <div className="flex max-w-max text-xl text-dark-200 mx-auto shadow-btn gap-7 p-4.5 rounded-xl items-center">
+                <Arrow className="rotate-180 custom-prev-new text-gray-200" />
+                <span className="bg-gray-300 h-5 w-0.5 flex min-w-0.5"></span>
+                <Arrow className="custom-next-new" />
+            </div>
         </div>
     );
 }
