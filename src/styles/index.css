@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+:root {
+  --dark-200: #23262f;
+  --white-700: #f7f8fa;
+  --white-200: #f2f2f2;
+}
+
+@theme inline {
+  --color-dark-200: var(--dark-200);
+  --color-white-700: var(--white-700);
+  --color-white-200: var(--white-200);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-urbanist: var(--font-urbanist);
+  --font-poppins: var(--font-poppins);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.ant-spin-nested-loading > div > .ant-spin {
+  max-height: 100dvh !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+.ant-spin .ant-spin-dot-item {
+  background: #23262f !important;
+}
