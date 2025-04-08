@@ -33,8 +33,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${urbanist.variable}  antialiased`}
       >
         <AntdRegistry>{children}</AntdRegistry>
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
-      </body>
+         </body>
     </html>
   );
 }

@@ -1,13 +1,13 @@
 'use client'
-// import Arrow from './icons/arrow'
+import { closeMiniApp } from '@telegram-apps/sdk';
 import Chevron from './icons/chevron'
 import Dots from './icons/dots'
 import Close from './icons/close'
 
 export default function TopNavigator() {
     const CloseApp = () => {
-        if (window?.Telegram?.WebApp) {
-            window?.Telegram.WebApp.close();
+        if (closeMiniApp && closeMiniApp.isAvailable()) {
+            closeMiniApp();
         }
     }
 
