@@ -12,8 +12,8 @@ export default function Home() {
     const timeout = setTimeout(() => {
 
       setLoading(false);
-      router.push('/start');
-    }, 15000);
+      router.push('/dashboard/start');
+    }, 1500);
 
     return () => clearTimeout(timeout);
   }, [router]);

@@ -6,9 +6,9 @@ import Close from './icons/close'
 
 export default function TopNavigator() {
     const CloseApp = () => {
-        // if (window?.Telegram?.WebApp) {
-        //     window?.Telegram.WebApp.close();
-        // }
+        if (window?.Telegram?.WebApp) {
+            window?.Telegram.WebApp.close();
+        }
     }
 
     return (
