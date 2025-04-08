@@ -1,5 +1,5 @@
+'use client'
 import TopNavigator from "@/components/topNavigator";
-
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     return (

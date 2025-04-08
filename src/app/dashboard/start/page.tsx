@@ -3,17 +3,10 @@ import Image from "next/image";
 import { Button, Spin } from 'antd';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-{/* <Image
-className="dark:invert"
-src="/next.svg"
-alt="Next.js logo"
-width={180}
-height={38}
-priority
-/> */}
+
 
 export default function Start() {
     const [filteredData, setFilteredData] = useState([1, 2, 3]);
@@ -21,7 +14,7 @@ export default function Start() {
     return (
         <div>
             <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
+                modules={[Navigation, Pagination]}
                 navigation={{
                     nextEl: ".custom-next-new",
                     prevEl: ".custom-prev-new",
@@ -31,37 +24,23 @@ export default function Start() {
                     dynamicBullets: true,
                     dynamicMainBullets: 2,
                 }}
-                loop={true}
-                autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                }}
-                breakpoints={{
-                    280: {
-                        slidesPerView: 2,
-                        spaceBetween: 10,
-                    },
-                    480: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                    },
-                    1024: {
-                        slidesPerView: 1,
-                        spaceBetween: 30,
-                    },
-                    1280: {
-                        slidesPerView: 1,
-                        spaceBetween: 50,
-                    },
-                }}
+                loop={false}
+
+                slidesPerView={1}
+                spaceBetween={10}
             >
                 {filteredData.map((item, i) => (
                     <SwiperSlide key={i}>
-                        salom
+                        <div className="px-2.5 pb-8">
+                            <Image
+                                className="w-full  "
+                                src="/robo1.png"
+                                alt="Robot"
+                                width={180}
+                                height={38}
+                                priority
+                            />
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
