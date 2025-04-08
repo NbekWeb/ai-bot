@@ -3,18 +3,12 @@ import { closeMiniApp } from '@telegram-apps/sdk';
 import Chevron from './icons/chevron'
 import Dots from './icons/dots'
 import Close from './icons/close'
-import Telegram from '@twa-dev/sdk';
 import { useEffect } from 'react';
 
 export default function TopNavigator() {
-    useEffect(() => {
-        Telegram.ready(); // Web App tayyor
-    }, []);
 
     const CloseApp = () => {
-        if (typeof Telegram !== 'undefined') {
-            Telegram.close();
-        }
+
     }
 
     return (
