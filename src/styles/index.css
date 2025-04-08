@@ -9,6 +9,7 @@
   --white-200: #f2f2f2;
   --gray-200: #b1b5c3;
   --gray-300: #E6E8EC;
+  --gray-700: #757171;
 }
 
 @theme inline {
