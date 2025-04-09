@@ -36,11 +36,12 @@ export default function Start() {
                     prevEl: ".custom-prev-new",
                 }}
                 pagination={{
-                    clickable: true,
+                    clickable: false,
                     dynamicBullets: true,
                     dynamicMainBullets: 2,
                 }}
                 loop={false}
+                allowTouchMove={false}
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
                 }}
