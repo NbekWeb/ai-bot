@@ -24,7 +24,7 @@ export default function Start() {
     };
 
     const goNext = () => {
-        router.push('/upload');
+        router.push('/dashboard/gender');
     }
 
     return (
@@ -66,10 +66,14 @@ export default function Start() {
                     Unlock the Power
                     Of  Future AI
                 </h2>
-                <p className="text-gray-700 font-light text-sm mt-1 mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p className="text-center text-gray-700 font-light text-sm mt-1 mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
             </div>
             <div className="flex max-w-max text-xl text-dark-200 mx-auto shadow-btn gap-7 p-4.5 rounded-xl items-center">
-                <Arrow className="rotate-180 custom-prev-new text-gray-200" />
+
+                <button className="rotate-180  custom-prev-new text-gray-200">
+
+                    <Arrow className=" text-gray-200" />
+                </button>
                 <span className="bg-gray-300 h-5 w-0.5 flex min-w-0.5"></span>
 
                 <button className={!last ? 'custom-next-new' : 'hidden'} onClick={handleNextClick} >
