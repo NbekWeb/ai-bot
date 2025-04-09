@@ -28,7 +28,7 @@ export default function Start() {
     }
 
     return (
-        <div>
+        <div className="pb-7">
             <Swiper
                 modules={[Navigation, Pagination]}
                 navigation={{
