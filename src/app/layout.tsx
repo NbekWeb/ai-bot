@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/index.css";
 import { Poppins, Urbanist } from 'next/font/google'
-import { AntdRegistry } from '@ant-design/nextjs-registry';
-
+import ClientLayout from './client-layout'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -31,8 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${poppins.variable} ${urbanist.variable}  antialiased`}
-      >
-        <AntdRegistry>{children}</AntdRegistry>
+      > <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
