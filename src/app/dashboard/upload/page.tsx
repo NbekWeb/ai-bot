@@ -55,7 +55,7 @@ export default function UploadPage() {
     );
 
     return (
-        <div className="flex flex-col flex-grow  ">
+        <div className="flex h-full flex-col flex-grow  ">
             <button onClick={goBack} className="rounded-btn rounded-lg w-8 h-8 flex items-center justify-center bg-white">
                 <BackIcon />
             </button>
@@ -117,7 +117,7 @@ export default function UploadPage() {
                 <button
                     onClick={goNext}
                     className={`h-14 font-semibold font-urbanist capitalize flex justify-center items-center w-full border-2 rounded-4xl text-white transition-all duration-300 ${fileList.length < 5
-                        ? 'bg-gray-700/30 hover:cursor-not-allowed'
+                        ? 'bg-gray-900/70 hover:cursor-not-allowed'
                         : 'border-dark-200 hover:bg-white hover:text-dark-200 bg-dark-200 hover:cursor-pointer'
                         }`}
                 >

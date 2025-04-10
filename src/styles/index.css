@@ -5,26 +5,42 @@
 @import url("./ant.css");
 
 :root {
+  --dark-full: #000;
+  --dark-100: #141416;
   --dark-200: #23262f;
   --white-700: #f7f8fa;
   --white-200: #f2f2f2;
   --gray-200: #b1b5c3;
   --gray-300: #e6e8ec;
   --gray-400: #acadb9;
+  --gray-500: #dadada;
+  --gray-600: #c2c3cb;
   --gray-700: #757171;
+  --gray-900: #9e9e9e;
+  --white: #fff;
 }
 
 @theme inline {
+  --color-dark-full: var(--dark-full);
+  --color-dark-100: var(--dark-100);
   --color-dark-200: var(--dark-200);
   --color-white-700: var(--white-700);
+  --color-white: var(--white);
   --color-white-200: var(--white-200);
   --color-gray-200: var(--gray-200);
   --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+  --color-gray-500: var(--gray-500);
+  --color-gray-600: var(--gray-600);
   --color-gray-700: var(--gray-700);
+  --color-gray-900: var(--gray-900);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-urbanist: var(--font-urbanist);
   --font-poppins: var(--font-poppins);
+  --text-min: 0.625rem;
+  --text-sm: 15px;
+  --text-22: 22px;
 }
 
 body {
