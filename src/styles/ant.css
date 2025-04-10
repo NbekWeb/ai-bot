@@ -1,0 +1,24 @@
+.ant-upload-wrapper.ant-upload-picture-card-wrapper
+  .ant-upload.ant-upload-select,
+:where(
+    .css-dev-only-do-not-override-1d4w9r2
+  ).ant-upload-wrapper.ant-upload-picture-circle-wrapper
+  .ant-upload.ant-upload-select {
+  background: #ececec !important;
+  border: none !important;
+}
+.ant-upload-wrapper.ant-upload-picture-card-wrapper
+  .ant-upload.ant-upload-select {
+  border: none !important;
+  border-radius: 16px !important;
+  padding: 0 !important;
+  width: 104px !important;
+  height: 104px !important;
+}
+.ant-spin-nested-loading > div > .ant-spin {
+    max-height: 100dvh !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+  }
+  .ant-spin .ant-spin-dot-item {
+    background: #23262f !important;
+  }

@@ -28,6 +28,7 @@ export default function GenderPage() {
                     src='/logo.png' alt="logo"
                     width={140}
                     height={168}
+                    className="h-42 w-auto"
                     priority
                 />
             </div>
