@@ -19,7 +19,7 @@ export default function MainPage() {
         }
     };
 
-    const cards = new Array(10).fill({ title: "Realistic" })
+    const cards = new Array(10).fill({ title: "Realistic", to: 'main/card/1' })
 
     return (
         <div>
@@ -35,14 +35,14 @@ export default function MainPage() {
                             onChange={handleInputChange}
                             className='main-input text-dark-100 font-medium flex-grow bg-transparent border-none outline-none' />
                     </div>
-                    <div className={`${!searchQuery ? 'opacity-30' : 'hover:opacity-85'} transition-all duration-300 bg-dark-100 text-white rounded-2xl h-full w-14 flex items-center justify-center`}>
+                    <div onClick={clearInput} className={`${!searchQuery ? 'opacity-30' : 'hover:opacity-85'} transition-all duration-300 bg-dark-100 text-white rounded-2xl h-full w-14 flex items-center justify-center`}>
                         <Close className='text-2xl' />
                     </div>
                 </div>
             </div>
             <div className='flex flex-col gap-5.5'>
                 {cards.map((card, index) => (
-                    <TypeCard key={index} data={card} />
+                    <TypeCard key={index} data={card} to={card?.to} />
                 ))}
             </div>
         </div>

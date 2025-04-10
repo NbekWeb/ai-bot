@@ -1,5 +1,3 @@
-
-
 export default function User({ className = '' }) {
     return (
         <span className={className}>

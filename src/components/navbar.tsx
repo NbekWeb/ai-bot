@@ -16,7 +16,7 @@ export default function Navbar() {
     const pathname = usePathname()
 
     return (
-        <div className="fixed bg-white z-10 border-t border-gray-900 bottom-0 left-0 w-full h-18 px-10 flex items-center justify-between">
+        <div className="fixed bg-white-700 z-10 border-t border-gray-900 bottom-0 left-0 w-full h-18 px-10 flex items-center justify-between">
             {navItems.map(({ href, icon }) => (
                 <Link href={href} key={href}>
                     <div className={`${pathname === href ? 'text-dark-100' : 'text-gray-900'} flex flex-col gap-2.5 text-2xl items-center`}>

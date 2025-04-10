@@ -1,16 +1,11 @@
 'use client'
 import Image from "next/image";
-import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import BackIcon from "@/components/icons/back";
 
 export default function GenderPage() {
-    const [gender, setGender] = useState('');
     const router = useRouter();
 
-    const changeGender = (val: string) => {
-        setGender(val)
-    }
     const goNext = () => {
         router.push('/dashboard/upload');
     }
