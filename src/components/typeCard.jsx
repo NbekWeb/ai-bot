@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Arrow from "./icons/arrow";
 
-export default function TypeCard({ data = {}, type = "full", to = "sa1" }) {
+export default function TypeCard({ data = {}, type = "full", to = "" }) {
   return (
     <div>
       <h3
